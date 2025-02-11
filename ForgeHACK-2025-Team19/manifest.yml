@@ -1,16 +1,4 @@
 modules:
-  action:
-    - key: get-issues
-      name: Get issues
-      function: getIssues
-      description: Fetches issues from a project.
-      inputs:
-        issueId:
-          title: Label
-          type: string
-          description: the label to filter the issues by.
-          required: false
-      actionVerb: GET
   rovo:agent:
     - key: analyst-agent
       name: Jira Analyst
