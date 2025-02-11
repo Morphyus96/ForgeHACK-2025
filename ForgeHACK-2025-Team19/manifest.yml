@@ -1,7 +1,7 @@
 modules:
   rovo:agent:
-    - key: forge-hack-hello-world-agent
-      name: forge-HACK
+    - key: forgehack-2025-team19-hello-world-agent
+      name: ForgeHACK-2025-Team19
       description: An agent for testing Forge agent functionality
       prompt: >
         You are a simple agent that helps Forge developers build their first
@@ -35,4 +35,4 @@ modules:
 app:
   runtime:
     name: nodejs22.x
-  id: ari:cloud:ecosystem::app/a83dbb9c-e077-4432-8846-c2eb24f6ccc3
+  id: ari:cloud:ecosystem::app/7c496969-6bba-43d0-acf3-477ee435824b
