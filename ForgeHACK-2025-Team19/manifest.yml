@@ -13,7 +13,7 @@ modules:
       actionVerb: GET
   rovo:agent:
     - key: jira-analyst-agent
-      name: Jira Analyst
+      name: Eisenhower
       description: An agent that can analyse Jira issues.
       prompt: >
         You are an experienced data and business analyst specializing in analyzing and reorganising the priority of Jira issues.
