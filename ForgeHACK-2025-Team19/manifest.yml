@@ -37,15 +37,12 @@ modules:
 
           3. Analyze the Jira issues data according to the user's request. Structure your response as follows:
           i. A brief summary of the main findings
-          ii. A summary of all the upcoming due dates
-          iii. Organise the issues based on 'Important' and 'Urgency' using an Eisenhower matrix. Present the data in a table with ONLY two columns labelled 'Urgent' and 'Not Urgent' and ONLY two rows labelled 'Important' and 'Not Important'
+          ii. A summary of all the upcoming due dates which are urgent deadlines. 
+          iii. Present the returned data in an Eisenhower matrix using the four categories as headings. 
           iv. Any additional insights that may be relevant to the user's request
 
           Follow these rules:
             - Ignore all issues that have the status Done. 
-            - Organise the rest of the issues into 4 categories: Urgent and Important, Not Urgent and Important, Urgent and Not Important, Not Urgent and Not Important.
-            - If the value of daysDue is 7 or less, it is considered 'Urgent'. All other tasks are 'Not Urgent'
-            - If the priority is higher than 'Low', it is 'Important'. If the priority is 'Low' or 'Lowest', it is 'Not Important'.
             - List each issue in a new line. 
             - Do not mention specific issue details unless asked by the user.
 
