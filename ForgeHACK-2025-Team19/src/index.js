@@ -18,9 +18,14 @@ export const getIssues = async (payload, requestContext) => {
 
 // Extract issue details from the response
 export const extractIssueDetails = async (data) => {
-  // console.log(`Extracting issue details from response: ${JSON.stringify(data)}`);
+  // console.log(Extracting issue details from response: ${JSON.stringify(data)});
   return data.issues.map(issue => ({
       key: issue.key,
-      summary: issue.fields.summary
+      summary: issue.fields.summary,
+      description: issue.fields.description ? issue.fields.description : 'No description',
+      priority: issue.fields.priority ? issue.fields.priority.name : 'No priority set',
+      assignee: issue.fields.assignee ? issue.fields.assignee.displayName : 'Unassigned',
+      status: issue.fields.status.name,
+      labels: issue.fields.labels > 0 ? issue.fields.labels : 'No labels set',
   }));
 }
